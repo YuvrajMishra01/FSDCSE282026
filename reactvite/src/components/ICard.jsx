@@ -1,16 +1,19 @@
-import React from 'react'
-
-function ICard({data}) {
+function ICard(props) {
   return (
-    <div style={{border:'10px solid red', height:'300px', width:'300px'}}>
-     <img src={data.pic} height={130} width={100} ></img>
-     <h2>Roll:{data.roll}</h2>
-     <h2>Name:{data.name}</h2>
-     <h2>Branch:{data.branch}</h2>
-     <h2>College:{data.college}</h2>
-
+    <div style={{ border: "10px solid red", height: "300px", width: "300px" }}>
+      {props.pic && (
+        <img
+          src={props.pic}
+          alt={`${props.name || "Student"} profile`}
+          style={{ width: "100px", height: "100px", objectFit: "cover" }}
+        />
+      )}
+      <h2>Roll:{props.roll}</h2>
+      <h2>Name:{props.name}</h2>
+      <h2>Branch:{props.branch}</h2>
+      <h2>College:{props.college}</h2>
     </div>
-  )
+  );
 }
 
-export default ICard
+export default ICard;
