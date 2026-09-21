@@ -1,0 +1,39 @@
+header{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+}
+hr{
+    width: 190px;
+}
+img
+{
+    border-radius: 50px;
+    width: 150px;
+    margin-left: 200px;
+
+    
+}
+h1{
+    font-style: italic;
+    font-size: small;
+    color: cornflowerblue;
+    margin-block: 20px;
+    margin-left: 20px;
+    margin: right 20px; 
+    border: 1px;
+    padding:10px;
+    border-color: cornflowerblue;
+    
+}
+p{
+    font-size: 13px;
+    border-left:20px;
+ 
+}
+p1{
+    font-style: italic;
+    margin-left: 150px;
+    font-family: monospace;
+}
