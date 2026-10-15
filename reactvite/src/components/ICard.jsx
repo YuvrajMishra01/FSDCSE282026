@@ -1,19 +1,21 @@
-function ICard(props) {
+import React from "react";
+
+function Icard({data}) {
   return (
-    <div style={{ border: "10px solid red", height: "300px", width: "300px" }}>
-      {props.pic && (
-        <img
-          src={props.pic}
-          alt={`${props.name || "Student"} profile`}
-          style={{ width: "100px", height: "100px", objectFit: "cover" }}
-        />
-      )}
-      <h2>Roll:{props.roll}</h2>
-      <h2>Name:{props.name}</h2>
-      <h2>Branch:{props.branch}</h2>
-      <h2>College:{props.college}</h2>
+    <div
+      style={{
+        color: "red",
+        border: "2px solid yellow",
+        height: "400px",
+        width: "200px",
+      }}
+    >
+      <img src={data.pic} height={200} width={200} alt="Student" />
+      <h2>NAME: {data.name}</h2>
+      <h2>ROLLNO: {data.rollNo}</h2>
+      <h2>COLLEGE: {data.college}</h2>
     </div>
   );
 }
 
-export default ICard;
+export default Icard;
